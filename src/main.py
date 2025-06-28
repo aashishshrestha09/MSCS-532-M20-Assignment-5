@@ -7,7 +7,7 @@ import os
 
 from empirical_analysis import run_benchmarks
 from utils.metrics_utils import generate_summaries
-from plot_results import plot_mean_runtimes
+from utils.plot_utils import plot_mean_runtimes
 
 logging.basicConfig(
     level=logging.INFO,

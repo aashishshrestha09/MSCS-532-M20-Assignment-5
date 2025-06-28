@@ -18,9 +18,7 @@ def plot_mean_runtimes(
         mean_df: DataFrame with mean runtimes.
         output_path: Path to save the figure.
     """
-    # Activate seaborn theme/style
-    sns.set_style("darkgrid")
-
+    sns.set_theme(style="darkgrid")
     algorithms = mean_df["Algorithm"].unique()
     input_types = mean_df["InputType"].unique()
 
@@ -42,9 +40,9 @@ def plot_mean_runtimes(
                 label=algo.capitalize(),
                 linewidth=2,
             )
-        ax.set_title(f"Mean Runtime on {input_type.capitalize()} Data", fontsize=14)
-        ax.set_xlabel("Input Size (log scale)", fontsize=12)
-        ax.set_ylabel("Mean Runtime (seconds, log scale)", fontsize=12)
+        ax.set_title(f"Mean Runtime on {input_type.capitalize()} Data")
+        ax.set_xlabel("Input Size (log scale)")
+        ax.set_ylabel("Mean Runtime (seconds, log scale)")
         ax.set_xscale("log")
         ax.set_yscale("log")
         ax.legend()
