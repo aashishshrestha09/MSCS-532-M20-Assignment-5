@@ -20,7 +20,6 @@ This project provides Python implementations of deterministic and randomized Qui
 ├── src                                     # Source code
 │   ├── empirical_analysis.py
 │   ├── main.py                             # Orchestrates benchmarks, summaries, plotting
-│   ├── plot_results.py
 │   ├── quicksort.py
 │   └── utils
 │       ├── __init__.py

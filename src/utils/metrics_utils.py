@@ -1,5 +1,7 @@
 """
-metrics_utils.py
+Utility functions for processing benchmark runtime data, including
+summary statistics computation and speedup calculation between
+deterministic and randomized Quicksort implementations.
 """
 
 import pandas as pd
