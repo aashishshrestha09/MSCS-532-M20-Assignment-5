@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assignment-5"
+version = "0.1.0"
+description = "Assignment 5: Quicksort Algorithm: Implementation, Analysis, and Randomization."
+readme = "README.md"
+urls = {homepage = "https://github.com/aashishshrestha09/MSCS-532-M20-Assignment-5"}
+dependencies = [
+    "matplotlib==3.10.0",
+    "pandas==2.3.0",
+    "seaborn==0.13.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black==24.3.0",
+  "pyflakes==3.2.0",
+]
